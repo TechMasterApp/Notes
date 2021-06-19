@@ -7,6 +7,7 @@
 
 import SwiftUI
 
-struct Note: Codable, Identifiable {
-    let id = UUID()
+struct Note: Identifiable, Codable {
+    let id: UUID
+    let text: String
 }
